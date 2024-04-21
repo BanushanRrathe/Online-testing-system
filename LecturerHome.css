@@ -1,0 +1,216 @@
+/* Basic Reset */
+.dashboard-header {
+    background-color: #343c44;
+    color: #fff;
+    padding: 13px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dashboard-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-nav ul li {
+    margin-right: 20px;
+}
+
+.dashboard-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.dashboard-nav ul li a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #e1e1e1;
+    color: #0056b3;
+}
+
+/* Navigation List Style */
+.dashboard-nav {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between; /* This will ensure items are spaced between */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav-list li.active a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    display: block;
+}
+
+.nav-list li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Logout Container */
+.logout-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This will push the logout container to the right */
+}
+
+.logout-button {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #e1e1e1;
+}
+
+/* Main content styles */
+.dashboard-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #eee; /* Light grey background */
+}
+
+/* Footer styles */
+.dashboard-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Module card styles */
+.module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.module {
+    flex: 1;
+    min-width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.module h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.course-item {
+    display: flex; /* Aligns the image container and text next to each other */
+    align-items: center; /* Vertically centers the text and image */
+
+}
+
+.image-container {
+    width: 150px; /* Width of the image container to form a square */
+    height: 150px; /* Height of the image container to form a square */
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    display: flex; /* Ensures the contents of the container can use flexbox properties */
+    justify-content: center; /* Horizontally centers the image in the container */
+    align-items: center; /* Vertically centers the image in the container */
+    margin-right: 10px; /* Adds space between the image container and the text */
+}
+
+.image-container img {
+    width: 100%; /* Ensures the image covers the full width of the container */
+    height: auto; /* Ensures the aspect ratio of the image is maintained */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+h3 {
+    margin: 0; /* Adjust as needed */
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .logout-container {
+        order: -1;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .logout-button {
+        order: 2;
+        margin-top: 10px;
+    }
+}
+.selected {
+    background-color: #4CAF50; /* or any highlight color */
+    color: white;
+}

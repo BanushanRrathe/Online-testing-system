@@ -1,0 +1,138 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #343c44;
+    color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.dashboard-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.2s;
+}
+
+.dashboard-nav ul li a:hover {
+    background-color: #003366;
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .admin-name {
+    margin-right: 10px; /* Space between name and logout button */
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 58px; /* Adjust as needed based on the height of the header */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+}
+
+/* Timer Styles */
+.timer {
+    color: white;
+    background-color: #5c6bc0;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Makes the timer like a tag */
+    margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-brand {
+        margin-bottom: 10px;
+    }
+
+    .dashboard-nav ul {
+        flex-direction: column;
+    }
+
+    .dashboard-nav ul li {
+        text-align: center;
+    }
+
+    .header-right {
+        order: -1;
+    }
+
+    .timer {
+        margin-bottom: 10px;
+    }
+}

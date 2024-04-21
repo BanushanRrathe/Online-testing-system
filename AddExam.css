@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #f9f9f9; /* Softer background color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* More readable line spacing */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centered for a modern look */
+    padding: 40px; /* More padding for better spacing */
+    flex-wrap: wrap; /* Responsive design */
+    gap: 20px; /* Spacing between child elements */
+}
+
+.add-exam-form, .existing-exams {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px; /* Slightly larger border-radius for modern rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Softer shadow for depth */
+    width: 100%; /* Full width to accommodate mobile sizes */
+    max-width: 500px; /* Maximum width for large screens */
+}
+
+.add-exam-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-exam-form label {
+    margin-top: 15px; /* Increased margin for better spacing */
+}
+
+.add-exam-form input[type="text"],
+.add-exam-form input[type="number"] {
+    padding: 15px; /* Larger padding for larger touch targets */
+    margin-top: 10px; /* Increased spacing */
+    border: 1px solid #ccc; /* Softer border color */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Inset shadow for depth */
+}
+
+.add-exam-form input[type="submit"] {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.add-exam-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover for interaction feedback */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px; /* Increased margin for better spacing */
+}
+
+table, th, td {
+    border: 1px solid #eaeaea; /* Softer border color */
+}
+
+th, td {
+    text-align: left;
+    padding: 12px; /* More padding for larger touch targets */
+}
+
+th {
+    background-color: #f8f8f8; /* Softer header background */
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1; /* Softer zebra striping color */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary link color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #0056b3; /* Darker shade on hover for interaction feedback */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .add-exam-form, .existing-exams {
+        max-width: none;
+    }
+}
+#content {
+    padding-top: 0; /* Reducing the padding from the top if necessary */
+
+}
+.header, .some-other-class {
+    margin-bottom: 0; /* Reduce bottom margin if it's too large */
+}
+

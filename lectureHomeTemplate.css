@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4;
+    color: #495057;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #343a40;
+    color: #fff;
+    position: fixed;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background: #007bff;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Added margin-top for spacing */
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    color: #adb5bd; /* Changed for a more subtle look */
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px; /* Padding for better click area */
+}
+
+.sidebar-nav li a:hover {
+    background: #0056b3; /* A shade darker on hover */
+    color: #fff; /* White text color on hover */
+}
+
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    background: #f4f4f4;
+    margin-left: 250px; /* Same as sidebar width */
+    transition: margin-left 0.5s; /* Smooth transition for sidebar toggle */
+}
+
+.header {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6; /* Border for separation */
+    margin-bottom: 20px; /* Space before the next content */
+}
+
+.edit-exam-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.edit-exam-container h2 {
+    margin-bottom: 20px;
+}
+
+.edit-exam-container form {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between form items */
+}
+
+.edit-exam-container input[type="text"],
+.edit-exam-container input[type="number"] {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%; /* Full width of container */
+}
+
+.edit-exam-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-exam-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add responsive handling */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Static positioning on small screens */
+    }
+
+    #content {
+        margin-left: 0; /* No margin since sidebar takes full width */
+    }
+
+    .edit-exam-container form {
+        flex-direction: column; /* Stack form items vertically on small screens */
+    }
+}
+.lecture-name-container {
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the sidebar */
+    left: 0; /* Align it to the left side */
+    width: 100%; /* Ensure it spans the full width of the sidebar */
+    background: #343a40; /* Match the sidebar background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Make sure padding doesn't affect the width */
+}

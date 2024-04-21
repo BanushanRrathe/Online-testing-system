@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <h2>Sign Up For MCQ Master</h2>
+    <form action="register.php" method="post" class="form-signup">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <p class="sign-in-text">Already have an account? <a href="LoginPage.php">Sign in</a></p> <!-- This is the new line -->
+        <div class="terms">
+            You agree to our <a href="terms.php">Terms & Conditions</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

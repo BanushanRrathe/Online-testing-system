@@ -1,0 +1,175 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-items {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for the navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .nav-item a {
+        width: 100%;
+        text-align: center;
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.nav-user-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.user-photo {
+    border-radius:
+            50%; /* Makes the image round */
+    margin-right: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.dropdown-menu.show {
+    display: block; /* Shows the dropdown menu */
+}
+
+.nav-user-dropdown {
+    position: relative;
+}
+
+.nav-user-dropdown .dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    border-radius: 50%; /* Make the photo round */
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-user-dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+}
